@@ -9,4 +9,4 @@ use File::Basename qw/ basename /;    # Import only basename function
 use Time::Moment;
 use Cwd;
 
-say "The current working directory is ", getcwd();
+unlink @ARGV or warn "Failed to unlink all files: $!\n";
